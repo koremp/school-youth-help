@@ -7,8 +7,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <head>
+      </head>
+      <body className="max-w-screen-md min-w-[320px] mx-auto">
+        <main className="flex flex-col gap-4">
+          {children}
+        </main>
       </body>
     </html>
   );
