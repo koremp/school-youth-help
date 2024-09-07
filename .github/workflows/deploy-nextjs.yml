@@ -1,29 +1,35 @@
-name: Deploy Next.js
+name: Deploy Next.js to GitHub Pages
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]  # main 브랜치에 푸시될 때 실행
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Install and Build
-        uses: actions/setup-node@v2
-      - run: yarn
-      - run: yarn build
-      env:
-        CI: true
-      - run: touch out/.nojekyll
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build && yarn export
+        env:
+          CI: true
+
+      - name: Add .nojekyll file
+        run: touch out/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
