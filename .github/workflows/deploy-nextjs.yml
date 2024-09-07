@@ -18,9 +18,9 @@ jobs:
         uses: actions/setup-node@v2
       - run: yarn
       - run: yarn build
-        env:
-          CI: true
-          - run: touch out/.nojekyll
+      env:
+        CI: true
+      - run: touch out/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
