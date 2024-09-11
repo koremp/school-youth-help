@@ -1,4 +1,7 @@
+import Script from "next/script";
 import "./globals.css";
+
+export const API_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAOMAP_API_KEY}&libraries=services,clusterer&autoload=false`;
 
 export default function RootLayout({
   children,
@@ -6,13 +9,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-      </head>
+    <html lang="ko">
+      <Script
+        src={API_URL}
+        strategy="beforeInteractive"
+      />
       <body className="max-w-screen-md min-w-[320px] mx-auto">
-        <main className="flex flex-col gap-4">
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   );
