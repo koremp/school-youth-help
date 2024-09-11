@@ -33,21 +33,21 @@ interface StateInfo {
   centerCount: number;
 }
 
-// interface CooperationListResponse {
-//   total: string;
-//   page: string;
-//   records: string;
-//   rows: Array<Cooperation>;
-// }
+interface CooperationListResponse {
+  total: string;
+  page: string;
+  records: string;
+  rows: Array<Cooperation>;
+}
 
-// interface Cooperation {
-//   mid: number;
-//   sid: number;
-//   siteid: number;
-//   siteurl: string;
-//   sitename: string;
-//   content: string;
-// }
+interface Cooperation {
+  mid: number;
+  sid: number;
+  siteid: number;
+  siteurl: string;
+  sitename: string;
+  content: string;
+}
 
 // interface CooperationStateInfo extends StateInfo {
 //   centerList: Cooperation[];
@@ -69,20 +69,20 @@ interface StateInfo {
 //   centerList: LocalRecovery[];
 // }
 
-// interface LocalShelterListResponse {
-//   total: string;
-//   page: string;
-//   records: string;
-//   rows: Array<localShelter>;
-// }
+interface LocalShelterListResponse {
+  total: string;
+  page: string;
+  records: string;
+  rows: Array<localShelter>;
+}
 
-// interface localShelter {
-//   sitename: string;
-//   siteurl: string;
-//   content: string;
-//   sid: string;
-//   siteid: number;
-// }
+interface localShelter {
+  sitename: string;
+  siteurl: string;
+  content: string;
+  sid: string;
+  siteid: number;
+}
 
 const getLocalShelterList = () => {
 
@@ -131,15 +131,6 @@ const getStatesInfo = ($: cheerio.CheerioAPI): Array<StateInfo> => {
   return statesInfo;
 };
 
-const getCooperationCenterList = async ({ name, url, param }: {name: string, url: string, param: string}) => {
-  const html = await getHTML(CooperationURL);
-  const $ = await loadHTML(html.data);
-  const statesInfo = getStatesInfo($);
-
-  const response = await getHTML(getCenterListURL({ centerCategory: param, location: '1' }));
-  console.log(response);
-};
-
 interface CenterData {
 	[key: string]: {
 		[key: string]: any[];
@@ -161,11 +152,13 @@ const main = async () => {
       const data = response.data;
 
       if (data && data.rows) {
-        const stateName = idx === 0 ? '전국' : statesInfo[idx - 1].stateName;
+        const stateName = idx === 0 ? '전국' : statesInfo[idx].stateName;
         centerData[name][stateName] = data.rows;
       }
     }
   }
+
+  // 데이터를 파일로 저장
   fs.writeFileSync('centerData.json', JSON.stringify(centerData, null, 2));
   console.log('데이터가 centerData.json 파일에 저장되었습니다.');
 };
