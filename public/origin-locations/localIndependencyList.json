@@ -1,0 +1,119 @@
+{
+  "전국": [
+    {
+      "sitename": "관악청소년자립지원관(이용형, 들꽃)",
+      "siteurl": "www.youthil.or.kr/",
+      "content": "주소 : 서울특별시 관악구 난우16길 17<br/>02-851-1924",
+      "sid": "1",
+      "siteid": 13997
+    },
+    {
+      "sitename": "서울시립청소년자립지원관(혼합형)",
+      "siteurl": "syouthself.or.kr/",
+      "content": "주소 : 서울특별시 도봉구 시루봉로 15길 93 대원리츠빌 102동 203호<br/>02-6959-5012",
+      "sid": "1",
+      "siteid": 13996
+    }
+  ],
+  "서울": [
+    {
+      "sitename": "부산광역시청소년자립지원관(혼합형)",
+      "siteurl": "www.bsyjarip.or.kr/",
+      "content": "주소 : 부산광역시 사상구 모덕로82,  부산광역시청소년종합지원센터 2층 221호<br/>051-303-9671",
+      "sid": "2",
+      "siteid": 13998
+    }
+  ],
+  "부산": [
+    {
+      "sitename": "대구광역시청소년자립지원관(이용형)",
+      "siteurl": "youthhelp.or.kr/html/main.html",
+      "content": "주소 : 대구광역시 남구 자유6길 45-1 1층<br/>053-657-1924",
+      "sid": "3",
+      "siteid": 13999
+    }
+  ],
+  "대구": [
+    {
+      "sitename": "인천시청소년자립지원관(혼합형, 별바라기)",
+      "siteurl": "www.icyouthself.or.kr/main/main.html",
+      "content": "주소 : 인천광역시 부평구 산곡동 7-42<br/>032-875-1319",
+      "sid": "4",
+      "siteid": 14000
+    },
+    {
+      "sitename": "인천시청소년자립지원관(혼합형, 행복자리)",
+      "siteurl": "www.icyouthself.or.kr/main/main.html",
+      "content": "주소 : 인천광역시 남동구 문화로169번길40-17 (간석동, 가람주택) 301호<br/>032-467-1398",
+      "sid": "4",
+      "siteid": 14001
+    }
+  ],
+  "인천": [],
+  "광주": [
+    {
+      "sitename": "대전청소년자립지원관(이용형)",
+      "siteurl": "djyouthself.modoo.at/",
+      "content": "주소 : 대전광역시 서구 둔산남로209번길 18, 301호 (둔산동)<br/>042-482-1924",
+      "sid": "6",
+      "siteid": 14002
+    }
+  ],
+  "대전": [
+    {
+      "sitename": "경기남부청소년자립지원관(이용형)",
+      "siteurl": "www.stand1824.kr/",
+      "content": "주소 : 경기도 군포시 군포로 789 온누리청소년센터 2층<br/>031-360-1824",
+      "sid": "7",
+      "siteid": 14003
+    },
+    {
+      "sitename": "경기북부청소년자립지원관(이용형)",
+      "siteurl": "www.stand1318.com/",
+      "content": "주소 : 경기도 의정부시 비우로 12, 1층<br/>031-928-1316",
+      "sid": "7",
+      "siteid": 14004
+    },
+    {
+      "sitename": "성남시청소년자립지원관(혼합형)",
+      "siteurl": "www.jaripon.com/",
+      "content": "주소 : 경기도 성남시 수정구 위례서일로 12 이타워프라자 8층<br/>031-723-7942",
+      "sid": "7",
+      "siteid": 14005
+    }
+  ],
+  "울산": [
+    {
+      "sitename": "강릉시청소년자립지원관(이용형)",
+      "siteurl": "www.instagram.com/gn_ys0502",
+      "content": "주소 : 강원도 강릉시 금성로 28-2(금학동)<br/>033-646-1424",
+      "sid": "8",
+      "siteid": 14009
+    }
+  ],
+  "경기": [],
+  "강원": [
+    {
+      "sitename": "천안청소년자립지원관(혼합형)",
+      "siteurl": "blog.naver.com/foryou-1380",
+      "content": "주소 : 충청남도 천안시 서북구 개목5길 34 3층<br/>041-578-1380",
+      "sid": "10",
+      "siteid": 14006
+    }
+  ],
+  "충북": [],
+  "충남": [],
+  "전북": [],
+  "전남": [],
+  "경북": [
+    {
+      "sitename": "제주특별자치도청소년자립지원관(이용형)",
+      "siteurl": "www.instagram.com/jejuyouthjarip/",
+      "content": "주소 : 제주특별자치도 제주시 칠성로길 1 4층<br/>064-721-1824",
+      "sid": "15",
+      "siteid": 14007
+    }
+  ],
+  "경남": [],
+  "제주": []
+}
