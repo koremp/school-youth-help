@@ -2,6 +2,8 @@
 
 학교 청소년 및 학교 밖 청소년 대상 앱
 
+Seoul Tech Impact 2024(https://www.seoultechimpact.com/) (2024.09.07 ~ 09.08) Solo Project
+
 ## ~~구현 기능~~
 
 * [] ~~지도에 청소년 지원 센터별 목록으로 보여주기~~
